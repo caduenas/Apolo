@@ -1,0 +1,25 @@
+<div class="d-flex">
+  <!-- Sidebar -->
+  <nav class="bg-dark text-white vh-100 p-3" style="width: 250px;">
+    <h5>🌐 Apolo Logistic - Lab</h5>
+    <ul class="nav flex-column mt-4">
+      <li class="nav-item">
+        <a
+          class="nav-link text-white"
+          routerLink="/inicio"
+        >Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link text-white"
+          routerLink="/calculator"
+        >Calculadora</a>
+      </li>      
+    </ul>
+  </nav>
+  
+  <!-- Contenido principal -->
+  <div class="flex-grow-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<form [formGroup]="formulario" (ngSubmit)="buscar()" class="row g-2 align-items-center">
+    <!-- Puerto de salida -->
+    <div class="col-auto">
+      <label for="puertoSalida" class="form-label mb-0">Puerto de salida</label>
+      <select id="puertoSalida" class="form-select" formControlName="puertoSalida">
+        <option value="">Seleccione</option>
+        <option *ngFor="let puerto of puertos" [value]="puerto.code">{{ puerto.name }}</option>
+      </select>
+    </div>
+  
+    <!-- Puerto de llegada -->
+    <div class="col-auto">
+      <label for="puertoLlegada" class="form-label mb-0">Puerto de llegada</label>
+      <select id="puertoLlegada" class="form-select" formControlName="puertoLlegada">
+        <option value="">Seleccione</option>
+        <option *ngFor="let puerto of puertos" [value]="puerto.code">{{ puerto.name }}</option>
+      </select>
+    </div>
+  
+    <!-- Fecha -->
+    <div class="col-auto">
+      <label for="fecha" class="form-label mb-0">Fecha</label>
+      <input type="date" id="fecha" class="form-control" formControlName="fecha">
+    </div>
+  
+    <!-- Tipo -->
+    <div class="col-auto">
+      <label for="tipo" class="form-label mb-0">Tipo</label>
+      <select id="tipo" class="form-select" formControlName="tipo">
+        <option value="">Seleccione</option>
+        <option value="FTL">FTL</option>
+        <option value="FCL">FCL</option>
+        <option value="Aereo">Aéreo</option>
+      </select>
+    </div>
+  
+    <!-- Botón Buscar -->
+    <div class="col-auto d-flex align-items-end">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+  </form>
+  
