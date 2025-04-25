@@ -1,0 +1,443 @@
+[
+    {
+      "code": "VAL",
+      "name": "Valencia",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Comunidad Valenciana"
+    },
+    {
+      "code": "BCN",
+      "name": "Barcelona",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Cataluña"
+    },
+    {
+      "code": "MRS",
+      "name": "Marsella",
+      "country_code": "FR",
+      "country_name": "Francia",
+      "region": "Provenza-Alpes-Costa Azul"
+    },
+    {
+      "code": "RTM",
+      "name": "Roterdam",
+      "country_code": "NL",
+      "country_name": "Países Bajos",
+      "region": "Holanda Meridional"
+    },
+    {
+      "code": "HAM",
+      "name": "Hamburgo",
+      "country_code": "DE",
+      "country_name": "Alemania",
+      "region": "Hamburgo (ciudad-estado)"
+    },
+    {
+      "code": "ANT",
+      "name": "Amberes",
+      "country_code": "BE",
+      "country_name": "Bélgica",
+      "region": "Flandes"
+    },
+    {
+      "code": "ALG",
+      "name": "Algeciras",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Andalucía"
+    },
+    {
+      "code": "PIR",
+      "name": "El Pireo",
+      "country_code": "GR",
+      "country_name": "Grecia",
+      "region": "Ática"
+    },
+    {
+      "code": "SGP",
+      "name": "Singapur",
+      "country_code": "SG",
+      "country_name": "Singapur",
+      "region": "Singapur (ciudad-estado, no aplica división administrativa)"
+    },
+    {
+      "code": "SHH",
+      "name": "Shanghái",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shanghái (municipalidad)"
+    },
+    {
+      "code": "HKG",
+      "name": "Hong Kong",
+      "country_code": "HK",
+      "country_name": "Hong Kong",
+      "region": "Hong Kong (región administrativa especial, no aplica división administrativa tradicional)"
+    },
+    {
+      "code": "PUS",
+      "name": "Busan",
+      "country_code": "KR",
+      "country_name": "Corea del Sur",
+      "region": "Busan (ciudad metropolitana)"
+    },
+    {
+      "code": "LAX",
+      "name": "Los Ángeles",
+      "country_code": "US",
+      "country_name": "Estados Unidos",
+      "region": "California"
+    },
+    {
+      "code": "NYK",
+      "name": "Nueva York",
+      "country_code": "US",
+      "country_name": "Estados Unidos",
+      "region": "Nueva York"
+    },
+    {
+      "code": "JED",
+      "name": "Yeda",
+      "country_code": "SA",
+      "country_name": "Arabia Saudita",
+      "region": "La Meca"
+    },
+    {
+      "code": "DXB",
+      "name": "Dubái",
+      "country_code": "AE",
+      "country_name": "Emiratos Árabes Unidos",
+      "region": "Emirato de Dubái"
+    },
+    {
+      "code": "MIA",
+      "name": "Miami",
+      "country_code": "US",
+      "country_name": "Estados Unidos",
+      "region": "Florida"
+    },
+    {
+      "code": "LIV",
+      "name": "Liverpool",
+      "country_code": "GB",
+      "country_name": "Reino Unido",
+      "region": "Merseyside"
+    },
+    {
+      "code": "GEN",
+      "name": "Génova",
+      "country_code": "IT",
+      "country_name": "Italia",
+      "region": "Liguria"
+    },
+    {
+      "code": "NAP",
+      "name": "Nápoles",
+      "country_code": "IT",
+      "country_name": "Italia",
+      "region": "Campania"
+    },
+    {
+      "code": "AMM",
+      "name": "Ámsterdam",
+      "country_code": "NL",
+      "country_name": "Países Bajos",
+      "region": "Holanda Septentrional"
+    },
+    {
+      "code": "BRE",
+      "name": "Bremen",
+      "country_code": "DE",
+      "country_name": "Alemania",
+      "region": "Bremen (ciudad-estado)"
+    },
+    {
+      "code": "LEH",
+      "name": "Le Havre",
+      "country_code": "FR",
+      "country_name": "Francia",
+      "region": "Normandía"
+    },
+    {
+      "code": "LIS",
+      "name": "Lisboa",
+      "country_code": "PT",
+      "country_name": "Portugal",
+      "region": "Lisboa (NUTS II)"
+    },
+    {
+      "code": "COP",
+      "name": "Copenhague",
+      "country_code": "DK",
+      "country_name": "Dinamarca",
+      "region": "Región Capital"
+    },
+    {
+      "code": "GOT",
+      "name": "Gotemburgo",
+      "country_code": "SE",
+      "country_name": "Suecia",
+      "region": "Västra Götaland"
+    },
+    {
+      "code": "HEL",
+      "name": "Helsinki",
+      "country_code": "FI",
+      "country_name": "Finlandia",
+      "region": "Uusimaa"
+    },
+    {
+      "code": "TAL",
+      "name": "Tallin",
+      "country_code": "EE",
+      "country_name": "Estonia",
+      "region": "Harju"
+    },
+    {
+      "code": "RIG",
+      "name": "Riga",
+      "country_code": "LV",
+      "country_name": "Letonia",
+      "region": "Riga (ciudad de importancia estatal)"
+    },
+    {
+      "code": "GDN",
+      "name": "Gdansk",
+      "country_code": "PL",
+      "country_name": "Polonia",
+      "region": "Pomerania"
+    },
+    {
+      "code": "ODE",
+      "name": "Odesa",
+      "country_code": "UA",
+      "country_name": "Ucrania",
+      "region": "Óblast de Odesa"
+    },
+    {
+      "code": "IST",
+      "name": "Estambul",
+      "country_code": "TR",
+      "country_name": "Turquía",
+      "region": "Estambul (provincia)"
+    },
+    {
+      "code": "ATH",
+      "name": "Atenas",
+      "country_code": "GR",
+      "country_name": "Grecia",
+      "region": "Ática"
+    },
+    {
+      "code": "BEY",
+      "name": "Beirut",
+      "country_code": "LB",
+      "country_name": "Líbano",
+      "region": "Gobernación de Beirut"
+    },
+    {
+      "code": "TLV",
+      "name": "Tel Aviv",
+      "country_code": "IL",
+      "country_name": "Israel",
+      "region": "Distrito de Tel Aviv"
+    },
+    {
+      "code": "CAI",
+      "name": "El Cairo",
+      "country_code": "EG",
+      "country_name": "Egipto",
+      "region": "Gobernación de El Cairo"
+    },
+    {
+      "code": "CPT",
+      "name": "Ciudad del Cabo",
+      "country_code": "ZA",
+      "country_name": "Sudáfrica",
+      "region": "Cabo Occidental"
+    },
+    {
+      "code": "DUR",
+      "name": "Durban",
+      "country_code": "ZA",
+      "country_name": "Sudáfrica",
+      "region": "KwaZulu-Natal"
+    },
+    {
+      "code": "MOM",
+      "name": "Bombay",
+      "country_code": "IN",
+      "country_name": "India",
+      "region": "Maharashtra"
+    },
+    {
+      "code": "KOL",
+      "name": "Calcuta",
+      "country_code": "IN",
+      "country_name": "India",
+      "region": "Bengala Occidental"
+    },
+    {
+      "code": "CMB",
+      "name": "Colombo",
+      "country_code": "LK",
+      "country_name": "Sri Lanka",
+      "region": "Provincia Occidental"
+    },
+    {
+      "code": "KUL",
+      "name": "Kuala Lumpur",
+      "country_code": "MY",
+      "country_name": "Malasia",
+      "region": "Territorios Federales de Kuala Lumpur"
+    },
+    {
+      "code": "JAK",
+      "name": "Yakarta",
+      "country_code": "ID",
+      "country_name": "Indonesia",
+      "region": "Yakarta (provincia especial)"
+    },
+    {
+      "code": "MNL",
+      "name": "Manila",
+      "country_code": "PH",
+      "country_name": "Filipinas",
+      "region": "Metro Manila (región)"
+    },
+    {
+      "code": "BKK",
+      "name": "Bangkok",
+      "country_code": "TH",
+      "country_name": "Tailandia",
+      "region": "Bangkok (área administrativa especial)"
+    },
+    {
+      "code": "HCM",
+      "name": "Ciudad Ho Chi Minh",
+      "country_code": "VN",
+      "country_name": "Vietnam",
+      "region": "Ciudad Ho Chi Minh (municipalidad central)"
+    },
+    {
+      "code": "TOK",
+      "name": "Tokio",
+      "country_code": "JP",
+      "country_name": "Japón",
+      "region": "Tokio (metrópolis)"
+    },
+    {
+      "code": "YOK",
+      "name": "Yokohama",
+      "country_code": "JP",
+      "country_name": "Japón",
+      "region": "Kanagawa"
+    },
+    {
+      "code": "SYD",
+      "name": "Sídney",
+      "country_code": "AU",
+      "country_name": "Australia",
+      "region": "Nueva Gales del Sur"
+    },
+    {
+      "code": "MEL",
+      "name": "Melbourne",
+      "country_code": "AU",
+      "country_name": "Australia",
+      "region": "Victoria"
+    },
+    {
+      "code": "AUK",
+      "name": "Auckland",
+      "country_code": "NZ",
+      "country_name": "Nueva Zelanda",
+      "region": "Auckland (región)"
+    },
+    {
+      "code": "VAN",
+      "name": "Vancouver",
+      "country_code": "CA",
+      "country_name": "Canadá",
+      "region": "Columbia Británica"
+    },
+    {
+      "code": "MTL",
+      "name": "Montreal",
+      "country_code": "CA",
+      "country_name": "Canadá",
+      "region": "Quebec"
+    },
+    {
+      "code": "MEX",
+      "name": "Veracruz",
+      "country_code": "MX",
+      "country_name": "México",
+      "region": "Veracruz"
+    },
+    {
+      "code": "PAN",
+      "name": "Panamá",
+      "country_code": "PA",
+      "country_name": "Panamá",
+      "region": "Provincia de Panamá"
+    },
+    {
+      "code": "CTG",
+      "name": "Cartagena",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Bolívar"
+    },
+    {
+      "code": "SCL",
+      "name": "Valparaíso",
+      "country_code": "CL",
+      "country_name": "Chile",
+      "region": "Valparaíso"
+    },
+    {
+      "code": "RIO",
+      "name": "Río de Janeiro",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "region": "Río de Janeiro (estado)"
+    },
+    {
+      "code": "BUE",
+      "name": "Buenos Aires",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Provincia de Buenos Aires"
+    },
+    {
+      "code": "MON",
+      "name": "Montevideo",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "region": "Montevideo (departamento)"
+    },
+    {
+      "code": "LIM",
+      "name": "Callao",
+      "country_code": "PE",
+      "country_name": "Perú",
+      "region": "Callao (provincia constitucional)"
+    },
+    {
+      "code": "GUI",
+      "name": "Guayaquil",
+      "country_code": "EC",
+      "country_name": "Ecuador",
+      "region": "Guayas"
+    },
+    {
+      "code": "BAQ",
+      "name": "Barranquilla",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Atlántico"
+    }
+  ]
