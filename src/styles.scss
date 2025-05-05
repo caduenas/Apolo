@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/scss/bootstrap";
+// custom.scss
+
+// Sobrescribir los colores por defecto
+$primary: #55bfca;
+$secondary: #6c757d;
+$success: #00b894;
+$danger: #d63031;
+$info: #0984e3;
+$warning: #fdcb6e;
+
+// ¡Importa Bootstrap después!
+@import 'bootstrap/scss/bootstrap';
