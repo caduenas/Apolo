@@ -1,3 +1,11 @@
+<div class="container pb-4">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 align-items-center">
+      <h1 class="">Conozca la mejor tarifa para su mercancia</h1>
+    </div>
+  </div>
+</div>
 <form [formGroup]="formulario" (ngSubmit)="buscar()" class="row g-2 align-items-center">
     <!-- Puerto de salida -->
     <div class="col-md-3 position-relative">
@@ -66,23 +74,31 @@
     <div class="col-auto">
       <label for="fecha" class="form-label mb-0">Fecha</label>
       <input type="date" id="fecha" class="form-control" formControlName="fecha">
-      <div class="text-darger small" *ngIf="campoInvalido('fecha')">Debe seleccionar una Fecha</div>
+      <div class="text-darger small" *ngIf="campoInvalido('fecha')">
+        <ng-container *ngIf="formulario.get('fecha')?.errors?.['required']">
+          Debe seleccionar una fecha
+        </ng-container>
+        <ng-container *ngIf="formulario.get('fecha')?.errors?.['fechaPasada']">
+          La fecha no puede ser anterior a hoy.
+        </ng-container>
+      </div>
     </div>
   
     <!-- Tipo -->
     <div class="col-md-2 position-relative">
-      <label for="tipo" class="form-label mb-0">Tipo</label>
+      <label for="tipo" class="form-label mb-0">Tipo de contenedor</label>
       <select id="tipo" class="form-select" formControlName="tipo">
         <option value="">Seleccione</option>
         <option value="FTL">FTL</option>
         <option value="FCL">FCL</option>
         <option value="Aereo">Aéreo</option>
       </select>
+      <div class="text-danger small" *ngIf="campoInvalido('tipo')">Este campo es obligatorio</div>
     </div>
   
     <!-- Botón Buscar -->
     <div class="col-md-2 d-flex align-items-end mt-3 ms-auto">
-      <button type="submit" class="btn btn-primary w-50">Buscar</button>
+      <button type="submit" class="btn btn-primary text-white w-50">Buscar</button>
     </div>
   </form>
   

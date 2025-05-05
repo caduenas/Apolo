@@ -22,7 +22,7 @@ export class CalculatorComponent implements OnInit {
     this.formulario = this.fb.group({
       puertoSalida: ['', Validators.required],
       puertoLlegada: ['', Validators.required],
-      fecha: ['', Validators.required],
+      fecha: ['', [Validators.required, this.fechaNoPasadaValidator()]],
       tipo: ['', Validators.required]
     });
 
@@ -88,5 +88,19 @@ export class CalculatorComponent implements OnInit {
     return control instanceof FormControl ? control : null;
   }
   
-
+  fechaNoPasadaValidator() {
+    return (control: FormControl) => {
+      const fechaIngresada = new Date(control.value);
+      const hoy = new Date();
+      
+      hoy.setHours(0, 0, 0, 0);
+      fechaIngresada.setHours(0, 0, 0, 0);
+  
+      if (fechaIngresada < hoy) {
+        return { fechaPasada: true };
+      }
+  
+      return null; 
+    };
+  }
 }
