@@ -21,7 +21,7 @@ export class PuertoService {
     private cargarPuertos(): void {
         this.http.get<{ code: string; name: string; contry_code: string; country_code: string; country_name: string; region: string}[]>(this.jsonURL).subscribe({
             next: (data) => {
-                console.log('Puertos cargados:', data);
+                console.log('Puertos cargados correctamente');
                 this.puertosSubject.next(data);
             },
             error: (err) =>{
