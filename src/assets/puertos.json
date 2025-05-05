@@ -1,443 +1,2018 @@
 [
     {
-      "code": "VAL",
-      "name": "Valencia",
+      "code": "ESADT",
+      "name": "Alcaudete de la Jaya",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Castilla-La Mancha"
+    },
+    {
+      "code": "ESALC",
+      "name": "Alicante",
       "country_code": "ES",
       "country_name": "España",
       "region": "Comunidad Valenciana"
     },
     {
-      "code": "BCN",
+      "code": "ESLEI",
+      "name": "Almería",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Andalucía"
+    },
+    {
+      "code": "ESBCN",
       "name": "Barcelona",
       "country_code": "ES",
       "country_name": "España",
       "region": "Cataluña"
     },
     {
-      "code": "MRS",
-      "name": "Marsella",
-      "country_code": "FR",
-      "country_name": "Francia",
-      "region": "Provenza-Alpes-Costa Azul"
+      "code": "ESBIO",
+      "name": "Bilbao",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "País Vasco"
     },
     {
-      "code": "RTM",
-      "name": "Roterdam",
-      "country_code": "NL",
-      "country_name": "Países Bajos",
-      "region": "Holanda Meridional"
+      "code": "ESSIO",
+      "name": "Casasimarro",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Castilla-La Mancha"
     },
     {
-      "code": "HAM",
-      "name": "Hamburgo",
-      "country_code": "DE",
-      "country_name": "Alemania",
-      "region": "Hamburgo (ciudad-estado)"
+      "code": "ESQIU",
+      "name": "Ciudadela",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Islas Baleares"
     },
     {
-      "code": "ANT",
-      "name": "Amberes",
-      "country_code": "BE",
-      "country_name": "Bélgica",
-      "region": "Flandes"
+      "code": "ESQFU",
+      "name": "Corralejo",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
     },
     {
-      "code": "ALG",
-      "name": "Algeciras",
+      "code": "ESGIJ",
+      "name": "Gijón",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Asturias"
+    },
+    {
+      "code": "ESIBZ",
+      "name": "Ibiza",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Islas Baleares"
+    },
+    {
+      "code": "ESLCG",
+      "name": "La Coruña (A Coruña)",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Galicia"
+    },
+    {
+      "code": "ESACE",
+      "name": "Lanzarote",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
+    },
+    {
+      "code": "ESLPA",
+      "name": "Las Palmas de Gran Canaria",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
+    },
+    {
+      "code": "ESMAH",
+      "name": "Mahón, Menorca",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Islas Baleares"
+    },
+    {
+      "code": "ESAGP",
+      "name": "Málaga",
       "country_code": "ES",
       "country_name": "España",
       "region": "Andalucía"
     },
     {
-      "code": "PIR",
-      "name": "El Pireo",
-      "country_code": "GR",
-      "country_name": "Grecia",
-      "region": "Ática"
+      "code": "ESMLN",
+      "name": "Melilla",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Melilla (ciudad autónoma)"
     },
     {
-      "code": "SGP",
-      "name": "Singapur",
-      "country_code": "SG",
-      "country_name": "Singapur",
-      "region": "Singapur (ciudad-estado, no aplica división administrativa)"
+      "code": "ESPMI",
+      "name": "Palma de Mallorca",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Islas Baleares"
     },
     {
-      "code": "SHH",
-      "name": "Shanghái",
-      "country_code": "CN",
-      "country_name": "China",
-      "region": "Shanghái (municipalidad)"
+      "code": "ESFUE",
+      "name": "Puerto del Rosario-Fuerteventura",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
     },
     {
-      "code": "HKG",
-      "name": "Hong Kong",
-      "country_code": "HK",
-      "country_name": "Hong Kong",
-      "region": "Hong Kong (región administrativa especial, no aplica división administrativa tradicional)"
+      "code": "ESEAS",
+      "name": "San Sebastián",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "País Vasco"
     },
     {
-      "code": "PUS",
-      "name": "Busan",
-      "country_code": "KR",
-      "country_name": "Corea del Sur",
-      "region": "Busan (ciudad metropolitana)"
+      "code": "ESSSG",
+      "name": "San Sebastián de la Gomera",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
     },
     {
-      "code": "LAX",
-      "name": "Los Ángeles",
-      "country_code": "US",
-      "country_name": "Estados Unidos",
-      "region": "California"
+      "code": "ESSPC",
+      "name": "Santa Cruz de La Palma",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Canarias"
     },
     {
-      "code": "NYK",
-      "name": "Nueva York",
-      "country_code": "US",
-      "country_name": "Estados Unidos",
-      "region": "Nueva York"
+      "code": "ESSDR",
+      "name": "Santander",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Cantabria"
     },
     {
-      "code": "JED",
-      "name": "Yeda",
-      "country_code": "SA",
-      "country_name": "Arabia Saudita",
-      "region": "La Meca"
+      "code": "ESSVQ",
+      "name": "Sevilla",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Andalucía"
     },
     {
-      "code": "DXB",
-      "name": "Dubái",
-      "country_code": "AE",
-      "country_name": "Emiratos Árabes Unidos",
-      "region": "Emirato de Dubái"
+      "code": "ESTAR",
+      "name": "Tarragona",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Cataluña"
     },
     {
-      "code": "MIA",
-      "name": "Miami",
-      "country_code": "US",
-      "country_name": "Estados Unidos",
-      "region": "Florida"
+      "code": "ESVLC",
+      "name": "Valencia",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Comunidad Valenciana"
     },
     {
-      "code": "LIV",
-      "name": "Liverpool",
-      "country_code": "GB",
-      "country_name": "Reino Unido",
-      "region": "Merseyside"
+      "code": "ESVGO",
+      "name": "Vigo",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Galicia"
     },
     {
-      "code": "GEN",
-      "name": "Génova",
-      "country_code": "IT",
-      "country_name": "Italia",
-      "region": "Liguria"
+      "code": "ESALA",
+      "name": "Villarreal de Alava",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "País Vasco"
     },
     {
-      "code": "NAP",
-      "name": "Nápoles",
-      "country_code": "IT",
-      "country_name": "Italia",
-      "region": "Campania"
+      "code": "ESVIT",
+      "name": "Vitoria-Gasteiz",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "País Vasco"
     },
     {
-      "code": "AMM",
-      "name": "Ámsterdam",
-      "country_code": "NL",
-      "country_name": "Países Bajos",
-      "region": "Holanda Septentrional"
+      "code": "ESZAZ",
+      "name": "Zaragoza",
+      "country_code": "ES",
+      "country_name": "España",
+      "region": "Aragón"
     },
     {
-      "code": "BRE",
-      "name": "Bremen",
-      "country_code": "DE",
-      "country_name": "Alemania",
-      "region": "Bremen (ciudad-estado)"
+      "code": "COEJA",
+      "name": "Barrancabermeja",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Santander"
     },
     {
-      "code": "LEH",
-      "name": "Le Havre",
-      "country_code": "FR",
-      "country_name": "Francia",
-      "region": "Normandía"
+      "code": "COBAQ",
+      "name": "Barranquilla",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Atlántico"
     },
     {
-      "code": "LIS",
-      "name": "Lisboa",
-      "country_code": "PT",
-      "country_name": "Portugal",
-      "region": "Lisboa (NUTS II)"
+      "code": "COBUN",
+      "name": "Buenaventura",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Valle del Cauca"
     },
     {
-      "code": "COP",
-      "name": "Copenhague",
-      "country_code": "DK",
-      "country_name": "Dinamarca",
-      "region": "Región Capital"
-    },
-    {
-      "code": "GOT",
-      "name": "Gotemburgo",
-      "country_code": "SE",
-      "country_name": "Suecia",
-      "region": "Västra Götaland"
-    },
-    {
-      "code": "HEL",
-      "name": "Helsinki",
-      "country_code": "FI",
-      "country_name": "Finlandia",
-      "region": "Uusimaa"
-    },
-    {
-      "code": "TAL",
-      "name": "Tallin",
-      "country_code": "EE",
-      "country_name": "Estonia",
-      "region": "Harju"
-    },
-    {
-      "code": "RIG",
-      "name": "Riga",
-      "country_code": "LV",
-      "country_name": "Letonia",
-      "region": "Riga (ciudad de importancia estatal)"
-    },
-    {
-      "code": "GDN",
-      "name": "Gdansk",
-      "country_code": "PL",
-      "country_name": "Polonia",
-      "region": "Pomerania"
-    },
-    {
-      "code": "ODE",
-      "name": "Odesa",
-      "country_code": "UA",
-      "country_name": "Ucrania",
-      "region": "Óblast de Odesa"
-    },
-    {
-      "code": "IST",
-      "name": "Estambul",
-      "country_code": "TR",
-      "country_name": "Turquía",
-      "region": "Estambul (provincia)"
-    },
-    {
-      "code": "ATH",
-      "name": "Atenas",
-      "country_code": "GR",
-      "country_name": "Grecia",
-      "region": "Ática"
-    },
-    {
-      "code": "BEY",
-      "name": "Beirut",
-      "country_code": "LB",
-      "country_name": "Líbano",
-      "region": "Gobernación de Beirut"
-    },
-    {
-      "code": "TLV",
-      "name": "Tel Aviv",
-      "country_code": "IL",
-      "country_name": "Israel",
-      "region": "Distrito de Tel Aviv"
-    },
-    {
-      "code": "CAI",
-      "name": "El Cairo",
-      "country_code": "EG",
-      "country_name": "Egipto",
-      "region": "Gobernación de El Cairo"
-    },
-    {
-      "code": "CPT",
-      "name": "Ciudad del Cabo",
-      "country_code": "ZA",
-      "country_name": "Sudáfrica",
-      "region": "Cabo Occidental"
-    },
-    {
-      "code": "DUR",
-      "name": "Durban",
-      "country_code": "ZA",
-      "country_name": "Sudáfrica",
-      "region": "KwaZulu-Natal"
-    },
-    {
-      "code": "MOM",
-      "name": "Bombay",
-      "country_code": "IN",
-      "country_name": "India",
-      "region": "Maharashtra"
-    },
-    {
-      "code": "KOL",
-      "name": "Calcuta",
-      "country_code": "IN",
-      "country_name": "India",
-      "region": "Bengala Occidental"
-    },
-    {
-      "code": "CMB",
-      "name": "Colombo",
-      "country_code": "LK",
-      "country_name": "Sri Lanka",
-      "region": "Provincia Occidental"
-    },
-    {
-      "code": "KUL",
-      "name": "Kuala Lumpur",
-      "country_code": "MY",
-      "country_name": "Malasia",
-      "region": "Territorios Federales de Kuala Lumpur"
-    },
-    {
-      "code": "JAK",
-      "name": "Yakarta",
-      "country_code": "ID",
-      "country_name": "Indonesia",
-      "region": "Yakarta (provincia especial)"
-    },
-    {
-      "code": "MNL",
-      "name": "Manila",
-      "country_code": "PH",
-      "country_name": "Filipinas",
-      "region": "Metro Manila (región)"
-    },
-    {
-      "code": "BKK",
-      "name": "Bangkok",
-      "country_code": "TH",
-      "country_name": "Tailandia",
-      "region": "Bangkok (área administrativa especial)"
-    },
-    {
-      "code": "HCM",
-      "name": "Ciudad Ho Chi Minh",
-      "country_code": "VN",
-      "country_name": "Vietnam",
-      "region": "Ciudad Ho Chi Minh (municipalidad central)"
-    },
-    {
-      "code": "TOK",
-      "name": "Tokio",
-      "country_code": "JP",
-      "country_name": "Japón",
-      "region": "Tokio (metrópolis)"
-    },
-    {
-      "code": "YOK",
-      "name": "Yokohama",
-      "country_code": "JP",
-      "country_name": "Japón",
-      "region": "Kanagawa"
-    },
-    {
-      "code": "SYD",
-      "name": "Sídney",
-      "country_code": "AU",
-      "country_name": "Australia",
-      "region": "Nueva Gales del Sur"
-    },
-    {
-      "code": "MEL",
-      "name": "Melbourne",
-      "country_code": "AU",
-      "country_name": "Australia",
-      "region": "Victoria"
-    },
-    {
-      "code": "AUK",
-      "name": "Auckland",
-      "country_code": "NZ",
-      "country_name": "Nueva Zelanda",
-      "region": "Auckland (región)"
-    },
-    {
-      "code": "VAN",
-      "name": "Vancouver",
-      "country_code": "CA",
-      "country_name": "Canadá",
-      "region": "Columbia Británica"
-    },
-    {
-      "code": "MTL",
-      "name": "Montreal",
-      "country_code": "CA",
-      "country_name": "Canadá",
-      "region": "Quebec"
-    },
-    {
-      "code": "MEX",
-      "name": "Veracruz",
-      "country_code": "MX",
-      "country_name": "México",
-      "region": "Veracruz"
-    },
-    {
-      "code": "PAN",
-      "name": "Panamá",
-      "country_code": "PA",
-      "country_name": "Panamá",
-      "region": "Provincia de Panamá"
-    },
-    {
-      "code": "CTG",
+      "code": "COCTG",
       "name": "Cartagena",
       "country_code": "CO",
       "country_name": "Colombia",
       "region": "Bolívar"
     },
     {
-      "code": "SCL",
-      "name": "Valparaíso",
-      "country_code": "CL",
-      "country_name": "Chile",
-      "region": "Valparaíso"
+      "code": "COCRC",
+      "name": "Cartago",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Valle del Cauca"
     },
     {
-      "code": "RIO",
-      "name": "Río de Janeiro",
-      "country_code": "BR",
-      "country_name": "Brasil",
-      "region": "Río de Janeiro (estado)"
+      "code": "COLET",
+      "name": "Leticia",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Amazonas"
     },
     {
-      "code": "BUE",
+      "code": "COPUU",
+      "name": "Puerto Asís",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Putumayo"
+    },
+    {
+      "code": "COPBE",
+      "name": "Puerto Berrío",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Antioquia"
+    },
+    {
+      "code": "COPYA",
+      "name": "Puerto Boyacá",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Boyacá"
+    },
+    {
+      "code": "COPCR",
+      "name": "Puerto Carreño",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Vichada"
+    },
+    {
+      "code": "CORCH",
+      "name": "Riohacha",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "La Guajira"
+    },
+    {
+      "code": "COSMR",
+      "name": "Santa Marta",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Magdalena"
+    },
+    {
+      "code": "COTLU",
+      "name": "Tolú",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Sucre"
+    },
+    {
+      "code": "COTCO",
+      "name": "Tumaco",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Nariño"
+    },
+    {
+      "code": "COTRB",
+      "name": "Turbo",
+      "country_code": "CO",
+      "country_name": "Colombia",
+      "region": "Antioquia"
+    },
+    {
+      "code": "ARBHI",
+      "name": "Bahía Blanca",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARBUE",
       "name": "Buenos Aires",
       "country_code": "AR",
       "country_name": "Argentina",
-      "region": "Provincia de Buenos Aires"
+      "region": "Buenos Aires"
     },
     {
-      "code": "MON",
-      "name": "Montevideo",
-      "country_code": "UY",
-      "country_name": "Uruguay",
-      "region": "Montevideo (departamento)"
+      "code": "ARCVI",
+      "name": "Caleta Olivia",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Cruz"
     },
     {
-      "code": "LIM",
-      "name": "Callao",
-      "country_code": "PE",
-      "country_name": "Perú",
-      "region": "Callao (provincia constitucional)"
+      "code": "ARCRD",
+      "name": "Comodoro Rivadavia",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Chubut"
     },
     {
-      "code": "GUI",
-      "name": "Guayaquil",
-      "country_code": "EC",
-      "country_name": "Ecuador",
-      "region": "Guayas"
+      "code": "ARCNQ",
+      "name": "Corrientes",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Corrientes"
     },
     {
-      "code": "BAQ",
-      "name": "Barranquilla",
-      "country_code": "CO",
-      "country_name": "Colombia",
-      "region": "Atlántico"
-    }
-  ]
+      "code": "ARFMA",
+      "name": "Formosa",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Formosa"
+    },
+    {
+      "code": "AROYA",
+      "name": "Goya",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Corrientes"
+    },
+    {
+      "code": "ARGHU",
+      "name": "Gualeguaychú",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Entre Ríos"
+    },
+    {
+      "code": "ARLPG",
+      "name": "La Plata",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARMDQ",
+      "name": "Mar del Plata",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARNEC",
+      "name": "Necochea",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARPRA",
+      "name": "Paraná",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Entre Ríos"
+    },
+    {
+      "code": "ARPSS",
+      "name": "Posadas",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Misiones"
+    },
+    {
+      "code": "ARPUD",
+      "name": "Puerto Deseado",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Cruz"
+    },
+    {
+      "code": "ARPMY",
+      "name": "Puerto Madryn",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Chubut"
+    },
+    {
+      "code": "ARRGL",
+      "name": "Río Gallegos",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Cruz"
+    },
+    {
+      "code": "ARRGA",
+      "name": "Río Grande",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Tierra del Fuego"
+    },
+    {
+      "code": "ARROS",
+      "name": "Rosario",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Fe"
+    },
+    {
+      "code": "ARULA",
+      "name": "San Julián",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Cruz"
+    },
+    {
+      "code": "ARSNS",
+      "name": "San Nicolás de los Arroyos",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARXPD",
+      "name": "San Pedro",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARRZA",
+      "name": "Santa Cruz",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Cruz"
+    },
+    {
+      "code": "ARSFN",
+      "name": "Santa Fe",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Santa Fe"
+    },
+    {
+      "code": "AROYO",
+      "name": "Tres Arroyos",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Buenos Aires"
+    },
+    {
+      "code": "ARTUC",
+      "name": "Tucumán",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Tucumán"
+    },
+    {
+      "code": "ARUSH",
+      "name": "Ushuaia",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "region": "Tierra del Fuego"
+    },
+    {
+      "code": "CNCSH",
+      "name": "Changsha",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Hunan"
+    },
+    {
+      "code": "CNCZX",
+      "name": "Changzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNCQI",
+      "name": "Chongqing",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Chongqing (municipalidad)"
+    },
+    {
+      "code": "CNDAL",
+      "name": "Dalian",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Liaoning"
+    },
+    {
+      "code": "CNDDG",
+      "name": "Dandong",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Liaoning"
+    },
+    {
+      "code": "CNFZH",
+      "name": "Fuzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Fujian"
+    },
+    {
+      "code": "CNGGZ",
+      "name": "Guangzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Guangdong"
+    },
+    {
+      "code": "CNHKO",
+      "name": "Haikou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Hainan"
+    },
+    {
+      "code": "CNHRN",
+      "name": "Harbin",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Heilongjiang"
+    },
+    {
+      "code": "CNHYN",
+      "name": "Huangyan",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Zhejiang"
+    },
+    {
+      "code": "CNHUI",
+      "name": "Huizhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Guangdong"
+    },
+    {
+      "code": "CNHUD",
+      "name": "Huludao",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Liaoning"
+    },
+    {
+      "code": "CNJMU",
+      "name": "Jimusi",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Heilongjiang"
+    },
+    {
+      "code": "CNJIU",
+      "name": "Jiujiang",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangxi"
+    },
+    {
+      "code": "CNJRG",
+      "name": "Jurong",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNLYG",
+      "name": "Lianyungang",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNNJI",
+      "name": "Nanjing",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNNIN",
+      "name": "Nanning",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Guangxi"
+    },
+    {
+      "code": "CNNTG",
+      "name": "Nantong",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNNBO",
+      "name": "Ningbo",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Zhejiang"
+    },
+    {
+      "code": "CNQIN",
+      "name": "Qingdao",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shandong"
+    },
+    {
+      "code": "CNSGH",
+      "name": "Shanghai",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shanghai (municipalidad)"
+    },
+    {
+      "code": "CNSXJ",
+      "name": "Shanshan",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Xinjiang"
+    },
+    {
+      "code": "CNSNZ",
+      "name": "Shenzhen",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Guangdong"
+    },
+    {
+      "code": "CNSZH",
+      "name": "Suzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNTNJ",
+      "name": "Tianjin",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Tianjin (municipalidad)"
+    },
+    {
+      "code": "CNWEF",
+      "name": "Weifang",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shandong"
+    },
+    {
+      "code": "CNWEI",
+      "name": "Weihai",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shandong"
+    },
+    {
+      "code": "CNWEH",
+      "name": "Weihai Dashuipo Apt",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shandong"
+    },
+    {
+      "code": "CNWNZ",
+      "name": "Wenzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Zhejiang"
+    },
+    {
+      "code": "CNNHN",
+      "name": "Wuhan",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Hubei"
+    },
+    {
+      "code": "CNWXS",
+      "name": "Wuxi",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNXAM",
+      "name": "Xiamen",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Fujian"
+    },
+    {
+      "code": "CNXIA",
+      "name": "Xian",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shaanxi"
+    },
+    {
+      "code": "CNYZH",
+      "name": "Yangzhou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNYAT",
+      "name": "Yantai",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Shandong"
+    },
+    {
+      "code": "CNYIK",
+      "name": "Yinkou",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Liaoning"
+    },
+    {
+      "code": "CNZHE",
+      "name": "Zhenjiang",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Jiangsu"
+    },
+    {
+      "code": "CNZUH",
+      "name": "Zhuhai",
+      "country_code": "CN",
+      "country_name": "China",
+      "region": "Guangdong"
+    },
+    {
+      "code": "USNGZ",
+      "name": "Alameda",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USALB",
+      "name": "Albany",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USANC",
+      "name": "Anchorage",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USARB",
+      "name": "Ann Arbor",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USANP",
+      "name": "Annapolis",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maryland"
+    },
+    {
+      "code": "USAAF",
+      "name": "Apalachicola",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USATW",
+      "name": "Appleton",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USASX",
+      "name": "Ashland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Oregon"
+    },
+    {
+      "code": "USAST",
+      "name": "Astoria",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Oregon"
+    },
+    {
+      "code": "USBGR",
+      "name": "Bangor",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maine"
+    },
+    {
+      "code": "USBHB",
+      "name": "Bar Harbor",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maine"
+    },
+    {
+      "code": "USBTR",
+      "name": "Baton Rouge",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Louisiana"
+    },
+    {
+      "code": "USBDE",
+      "name": "Baudette",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USHPY",
+      "name": "Baytown",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USBPT",
+      "name": "Beaumont",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USBLI",
+      "name": "Bellingham",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USJBK",
+      "name": "Berkeley",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USBEX",
+      "name": "Bethlehem",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Pennsylvania"
+    },
+    {
+      "code": "USBCG",
+      "name": "Boca Grande",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USBOS",
+      "name": "Boston",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    },
+    {
+      "code": "USPWT",
+      "name": "Bremerton",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USBDR",
+      "name": "Bridgeport",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Connecticut"
+    },
+    {
+      "code": "USBWB",
+      "name": "Brownsburg",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Indiana"
+    },
+    {
+      "code": "USBRO",
+      "name": "Brownsville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USSSI",
+      "name": "Brunswick",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Georgia"
+    },
+    {
+      "code": "USBUF",
+      "name": "Buffalo",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USBTV",
+      "name": "Burlington",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Vermont"
+    },
+    {
+      "code": "USCGE",
+      "name": "Cambridge",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    },
+    {
+      "code": "USCNM",
+      "name": "Carlsbad",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USCKI",
+      "name": "Catalina Island",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USCHS",
+      "name": "Charleston",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "South Carolina"
+    },
+    {
+      "code": "USCRW",
+      "name": "Charleston",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "West Virginia"
+    },
+    {
+      "code": "USUFG",
+      "name": "Chesapeake",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Virginia"
+    },
+    {
+      "code": "USCHI",
+      "name": "Chicago",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Illinois"
+    },
+    {
+      "code": "USCVG",
+      "name": "Cincinnati",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Ohio"
+    },
+    {
+      "code": "USCLE",
+      "name": "Cleveland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Ohio"
+    },
+    {
+      "code": "USCDV",
+      "name": "Cordova",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USCRP",
+      "name": "Corpus Christi",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USCEC",
+      "name": "Crescent City",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USDVN",
+      "name": "Davenport",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Iowa"
+    },
+    {
+      "code": "USDEC",
+      "name": "Decatur",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Illinois"
+    },
+    {
+      "code": "USDSM",
+      "name": "Des Moines",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Iowa"
+    },
+    {
+      "code": "USDET",
+      "name": "Detroit",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USDBQ",
+      "name": "Dubuque",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Iowa"
+    },
+    {
+      "code": "USDLH",
+      "name": "Duluth",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USDKK",
+      "name": "Dunkirk",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USDUT",
+      "name": "Dutch Harbor",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USEKI",
+      "name": "Elkhart",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Indiana"
+    },
+    {
+      "code": "USERI",
+      "name": "Erie",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Pennsylvania"
+    },
+    {
+      "code": "USESC",
+      "name": "Escanaba",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USEKA",
+      "name": "Eureka",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USEVV",
+      "name": "Evansville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Indiana"
+    },
+    {
+      "code": "USPAE",
+      "name": "Everett",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USFAI",
+      "name": "Fairbanks",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USFOB",
+      "name": "Fort Bragg",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USFLL",
+      "name": "Fort Lauderdale",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USFPR",
+      "name": "Fort Pierce",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USGQQ",
+      "name": "Galion",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Ohio"
+    },
+    {
+      "code": "USGLS",
+      "name": "Galveston",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USGYY",
+      "name": "Gary",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Indiana"
+    },
+    {
+      "code": "USGGE",
+      "name": "Georgetown",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "South Carolina"
+    },
+    {
+      "code": "USGOH",
+      "name": "Goshen",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Indiana"
+    },
+    {
+      "code": "USGRR",
+      "name": "Grand Rapids",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USGRB",
+      "name": "Green Bay",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USGLH",
+      "name": "Greenville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Mississippi"
+    },
+    {
+      "code": "USGON",
+      "name": "Groton-New London Apt",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Connecticut"
+    },
+    {
+      "code": "USGPT",
+      "name": "Gulfport",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Mississippi"
+    },
+    {
+      "code": "USHNS",
+      "name": "Haines",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USHIF",
+      "name": "Hill Air Force Base",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Utah"
+    },
+    {
+      "code": "USITO",
+      "name": "Hilo",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Hawaii"
+    },
+    {
+      "code": "USHLM",
+      "name": "Holland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USHOM",
+      "name": "Homer",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USHNL",
+      "name": "Honolulu",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Hawaii"
+    },
+    {
+      "code": "USHOU",
+      "name": "Houston",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Texas"
+    },
+    {
+      "code": "USINL",
+      "name": "International Falls",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USJAX",
+      "name": "Jacksonville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USJVL",
+      "name": "Janesville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USJNU",
+      "name": "Juneau",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USOGG",
+      "name": "Kahului",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Hawaii"
+    },
+    {
+      "code": "USKCK",
+      "name": "Kansas City",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Kansas"
+    },
+    {
+      "code": "USMKC",
+      "name": "Kansas City",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Missouri"
+    },
+    {
+      "code": "USKLS",
+      "name": "Kelso",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USENW",
+      "name": "Kenosha",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USKTN",
+      "name": "Ketchikan",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USEYW",
+      "name": "Key West",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USLCH",
+      "name": "Lake Charles",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Louisiana"
+    },
+    {
+      "code": "USURE",
+      "name": "Laurel",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maryland"
+    },
+    {
+      "code": "USLWM",
+      "name": "Lawrence",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    },
+    {
+      "code": "USLIZ",
+      "name": "Limestone",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maine"
+    },
+    {
+      "code": "USLGB",
+      "name": "Long Beach",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USLOG",
+      "name": "Longview",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USLAX",
+      "name": "Los Angeles",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USLUI",
+      "name": "Louisville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Kentucky"
+    },
+    {
+      "code": "USLDM",
+      "name": "Ludington",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USMCD",
+      "name": "Mackinac Island",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USMTW",
+      "name": "Manitowoc",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USMEM",
+      "name": "Memphis",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Tennessee"
+    },
+    {
+      "code": "USMTM",
+      "name": "Metlakatla",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USMIA",
+      "name": "Miami",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USMKE",
+      "name": "Milwaukee",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USMES",
+      "name": "Minneapolis",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USMOB",
+      "name": "Mobile",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alabama"
+    },
+    {
+      "code": "USINX",
+      "name": "Mosinee",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USMKG",
+      "name": "Muskegon",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USBNA",
+      "name": "Nashville",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Tennessee"
+    },
+    {
+      "code": "USHEZ",
+      "name": "Natchez",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Mississippi"
+    },
+    {
+      "code": "USEWB",
+      "name": "New Bedford-Fall River Apt",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    },
+    {
+      "code": "USHVN",
+      "name": "New Haven",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Connecticut"
+    },
+    {
+      "code": "USMSY",
+      "name": "New Orleans",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Louisiana"
+    },
+    {
+      "code": "USNYC",
+      "name": "New York",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USEWR",
+      "name": "Newark",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New Jersey"
+    },
+    {
+      "code": "USNPT",
+      "name": "Newport",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Rhode Island"
+    },
+    {
+      "code": "USOLS",
+      "name": "Nogales",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Arizona"
+    },
+    {
+      "code": "USOME",
+      "name": "Nome",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USORF",
+      "name": "Norfolk",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Virginia"
+    },
+    {
+      "code": "USOTH",
+      "name": "North Bend",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Oregon"
+    },
+    {
+      "code": "USOAK",
+      "name": "Oakland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USOGS",
+      "name": "Ogdensburg",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USOLM",
+      "name": "Olympia",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USOMA",
+      "name": "Omaha",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Nebraska"
+    },
+    {
+      "code": "USOTM",
+      "name": "Ottumwa",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Iowa"
+    },
+    {
+      "code": "USOWB",
+      "name": "Owensboro",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Kentucky"
+    },
+    {
+      "code": "USOXR",
+      "name": "Oxnard-Ventura Apt",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USPAH",
+      "name": "Paducah",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Kentucky"
+    },
+    {
+      "code": "USPFN",
+      "name": "Panama City",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USPGL",
+      "name": "Pascagoula",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Mississippi"
+    },
+    {
+      "code": "USPNS",
+      "name": "Pensacola",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USPHL",
+      "name": "Philadelphia",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Pennsylvania"
+    },
+    {
+      "code": "USPIT",
+      "name": "Pittsburgh",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Pennsylvania"
+    },
+    {
+      "code": "USCLM",
+      "name": "Port Angeles",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USPEF",
+      "name": "Port Everglades",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USNTD",
+      "name": "Port Hueneme",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USPHN",
+      "name": "Port Huron",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USTWD",
+      "name": "Port Townsend",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USPDX",
+      "name": "Portland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Oregon"
+    },
+    {
+      "code": "USPWM",
+      "name": "Portland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maine"
+    },
+    {
+      "code": "USPSM",
+      "name": "Portsmouth",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New Hampshire"
+    },
+    {
+      "code": "USPVD",
+      "name": "Providence",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Rhode Island"
+    },
+    {
+      "code": "USPVC",
+      "name": "Provincetown",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    },
+    {
+      "code": "USRAC",
+      "name": "Racine",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USRIC",
+      "name": "Richmond",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Virginia"
+    },
+    {
+      "code": "USROC",
+      "name": "Rochester",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USRKD",
+      "name": "Rockland",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Maine"
+    },
+    {
+      "code": "USSAC",
+      "name": "Sacramento",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSTG",
+      "name": "Saint George Island",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USSTL",
+      "name": "Saint Louis",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Missouri"
+    },
+    {
+      "code": "USSTP",
+      "name": "Saint Paul",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USPIE",
+      "name": "Saint Petersburg",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USSAN",
+      "name": "San Diego",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSFO",
+      "name": "San Francisco",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSJC",
+      "name": "San Jose",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USJKF",
+      "name":"Jakolof Bay",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USSPQ",
+      "name": "San Pedro",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSKY",
+      "name": "Sandusky, Erie",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Ohio"
+    },
+    {
+      "code": "USSBA",
+      "name": "Santa Barbara",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSRU",
+      "name": "Santa Cruz",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSSM",
+      "name": "Sault Sainte Marie",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Michigan"
+    },
+    {
+      "code": "USJMC",
+      "name": "Sausalito",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSAV",
+      "name": "Savannah",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Georgia"
+    },
+    {
+      "code": "USSEA",
+      "name": "Seattle",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USSUX",
+      "name": "Sioux City",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Iowa"
+    },
+    {
+      "code": "USSGY",
+      "name": "Skagway",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USSPT",
+      "name": "South Saint Paul",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USZSP",
+      "name": "Stephen",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USSCK",
+      "name": "Stockton",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USSUW",
+      "name": "Superior",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Wisconsin"
+    },
+    {
+      "code": "USSYR",
+      "name": "Syracuse",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "New York"
+    },
+    {
+      "code": "USTIW",
+      "name": "Tacoma",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Washington"
+    },
+    {
+      "code": "USTPA",
+      "name": "Tampa",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USTOL",
+      "name": "Toledo",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Ohio"
+    },
+    {
+      "code": "USVDZ",
+      "name": "Valdez",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Alaska"
+    },
+    {
+      "code": "USVKS",
+      "name": "Vicksburg",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Mississippi"
+    },
+    {
+      "code": "USRRT",
+      "name": "Warroad",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USUGN",
+      "name": "Waukegan",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Illinois"
+    },
+    {
+      "code": "USPBI",
+      "name": "West Palm Beach",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Florida"
+    },
+    {
+      "code": "USILG",
+      "name": "Wilmington",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "California"
+    },
+    {
+      "code": "USILM",
+      "name": "Wilmington",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Delaware"
+    },
+    {
+      "code": "USONA",
+      "name": "Winona",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Minnesota"
+    },
+    {
+      "code": "USORH",
+      "name": "Worcester",
+      "country_code": "US",
+      "country_name": "United States",
+      "region": "Massachusetts"
+    } 
+]
