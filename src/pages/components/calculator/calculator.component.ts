@@ -3,18 +3,19 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule,FormControl } f
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { PuertoService } from '../../../app/services/puerto.service';
+import { PrebookListComponent } from "../prebook-list/prebook-list.component";
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule,HttpClientModule],
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule, PrebookListComponent],
   templateUrl: './calculator.component.html',
   styleUrl: './calculator.component.scss'
 })
 export class CalculatorComponent implements OnInit {
   formulario!: FormGroup;
   puertos: { code: string; name: string; country_code: string; country_name: string; region: string }[] = [];
-  
+  mostrar = false
 
   constructor(private fb: FormBuilder, private puertoService: PuertoService) {}
 
@@ -31,7 +32,7 @@ export class CalculatorComponent implements OnInit {
         this.puertos = data;
       },
       error: (err) => {
-        console.error('❌ Error cargando puertos:', err);
+        console.error('Error cargando puertos:', err);
       }
     });
   }
@@ -39,9 +40,9 @@ export class CalculatorComponent implements OnInit {
   buscar(): void {
     if (this.formulario.valid) {
       const datos = this.formulario.value;
-      console.log('🔍 Datos del formulario:', datos);
+      console.log('Datos del formulario:', datos);
     } else {
-      console.log('⚠️ Formulario inválido');
+      console.log('Formulario inválido');
       this.formulario.markAllAsTouched();
     }
   }

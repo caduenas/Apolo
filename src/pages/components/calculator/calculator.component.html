@@ -6,21 +6,21 @@
     </div>
   </div>
 </div>
-<form [formGroup]="formulario" (ngSubmit)="buscar()" class="row g-2 align-items-center">
-    <!-- Puerto de salida -->
-    <div class="col-md-3 position-relative">
+
+<form [formGroup]="formulario" (ngSubmit)="buscar()" class="container">
+  <div class="row">
+    <div class="col-3 position-relative">
       <label for="puertoSalida" class="form-label">Puerto de salida</label>
       <input
-      id="puertoSalida"
-      type="text"
-      class="form-control"
-      formControlName="puertoSalida"
-      (input)="filtrarPuertos('puertoSalida')"
-      autocomplete="off"
-      placeholder="Ej: Valparaíso"
-    />
-    
-      <!-- Sugerencias -->
+        id="puertoSalida"
+        type="text"
+        class="form-control"
+        formControlName="puertoSalida"
+        (input)="filtrarPuertos('puertoSalida')"
+        autocomplete="off"
+        placeholder="Ej: Valparaíso"
+      />
+
       <ul class="list-group position-absolute w-100 z-3 mt-1" *ngIf="sugerenciasSalida.length > 0">
         <li
           class="list-group-item list-group-item-action"
@@ -31,47 +31,43 @@
             {{ sugerencia.country_name}}
           </div>
           <div>
-            <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>  
+            <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>
           </div>
         </li>
       </ul>
       <div class="text-danger small" *ngIf="campoInvalido('puertoSalida')">Este campo es obligatorio</div>
     </div>
 
-    <!-- Puerto de llegada -->
-    <div class="col-md-3 position-relative">
+    <div class="col-3 position-relative">
       <label for="puertoLlegada" class="form-label">Puerto de llegada</label>
       <input
-      id="puertoLlegada"
-      type="text"
-      class="form-control"
-      formControlName="puertoLlegada"
-      (input)="filtrarPuertos('puertoLlegada')"
-      autocomplete="off"
-      placeholder="Ej: Barcelona"
-    />    
-  
-      <!-- Sugerencias -->
+        id="puertoLlegada"
+        type="text"
+        class="form-control"
+        formControlName="puertoLlegada"
+        (input)="filtrarPuertos('puertoLlegada')"
+        autocomplete="off"
+        placeholder="Ej: Barcelona"
+      />
+
       <ul class="list-group position-absolute w-100 z-3 mt-1" *ngIf="sugerenciasLlegada.length > 0">
         <li
           class="list-group-item list-group-item-action"
           *ngFor="let sugerencia of sugerenciasLlegada"
           (click)="seleccionarPuerto('puertoLlegada', sugerencia)"
         >
-        <div>
-          {{ sugerencia.country_name}}
-        </div>
-        <div>
-          <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>  
-        </div>
+          <div>
+            {{ sugerencia.country_name}}
+          </div>
+          <div>
+            <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>
+          </div>
         </li>
       </ul>
       <div class="text-danger small" *ngIf="campoInvalido('puertoLlegada')">Este campo es obligatorio</div>
     </div>
 
-  
-    <!-- Fecha -->
-    <div class="col-auto">
+    <div class="col-3">
       <label for="fecha" class="form-label mb-0">Fecha</label>
       <input type="date" id="fecha" class="form-control" formControlName="fecha">
       <div class="text-darger small" *ngIf="campoInvalido('fecha')">
@@ -83,9 +79,8 @@
         </ng-container>
       </div>
     </div>
-  
-    <!-- Tipo -->
-    <div class="col-md-2 position-relative">
+
+    <div class="col-3">
       <label for="tipo" class="form-label mb-0">Tipo de contenedor</label>
       <select id="tipo" class="form-select" formControlName="tipo">
         <option value="">Seleccione</option>
@@ -95,10 +90,13 @@
       </select>
       <div class="text-danger small" *ngIf="campoInvalido('tipo')">Este campo es obligatorio</div>
     </div>
-  
-    <!-- Botón Buscar -->
-    <div class="col-md-2 d-flex align-items-end mt-3 ms-auto">
-      <button type="submit" class="btn btn-primary text-white w-50">Buscar</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2 ms-auto mt-3">
+      <button type="submit" class="btn btn-primary text-white w-100" (click)="mostrar = true">Buscar</button>
     </div>
-  </form>
-  
+  </div>
+
+  <app-prebook-list *ngIf="mostrar"></app-prebook-list>
+</form>
