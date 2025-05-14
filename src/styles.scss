@@ -11,3 +11,7 @@ $warning: #fdcb6e;
 
 // ¡Importa Bootstrap después!
 @import 'bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
