@@ -5,7 +5,8 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { importProvidersFrom } from '@angular/core'; // <-- necesario
+import { importProvidersFrom } from '@angular/core';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'; // <-- necesario
 
 bootstrapApplication(AppComponent, {
   ...appConfig,
@@ -13,6 +14,6 @@ bootstrapApplication(AppComponent, {
     ...appConfig.providers || [],
     provideRouter(routes),
     provideHttpClient(),
-    importProvidersFrom(BrowserAnimationsModule) 
+    importProvidersFrom(BrowserAnimationsModule), provideAnimationsAsync() 
   ]
 }).catch((err) => console.error(err));
