@@ -5,5 +5,5 @@ import { CalculatorComponent } from '../pages/components/calculator/calculator.c
 export const routes: Routes = [
   { path: 'inicio', component: HomeComponent },
   { path: 'calculator', component: CalculatorComponent },
-  { path: '**', redirectTo: 'inicio' }
+  { path: '**', redirectTo: 'calculator' }
 ];

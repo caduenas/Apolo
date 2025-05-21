@@ -1,22 +1,19 @@
-<div class="container pb-4">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 align-items-center">
-      <h1 class="">Conozca la mejor tarifa para su mercancia</h1>
-    </div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 align-items-center">
+    <h1 class="text-center">Conozca la mejor tarifa para su mercancia</h1>
   </div>
 </div>
-
 <form [formGroup]="formulario" (ngSubmit)="buscar()" class="container">
   <div class="row">
     <div class="col-3 position-relative">
-      <label for="puertoSalida" class="form-label">Puerto de salida</label>
+      <label for="origin" class="form-label">Puerto de salida</label>
       <input
-        id="puertoSalida"
+        id="origin"
         type="text"
         class="form-control"
-        formControlName="puertoSalida"
-        (input)="filtrarPuertos('puertoSalida')"
+        [value]="inputOrigin"
+        (input)="filtrarPuertos('origin', $event)"
         autocomplete="off"
         placeholder="Ej: Valparaíso"
       />
@@ -24,8 +21,8 @@
       <ul class="list-group position-absolute w-100 z-3 mt-1" *ngIf="sugerenciasSalida.length > 0">
         <li
           class="list-group-item list-group-item-action"
-          *ngFor="let sugerencia of sugerenciasSalida"
-          (click)="seleccionarPuerto('puertoSalida', sugerencia)"
+          *ngFor="let sugerencia of sugerenciasSalida" [value]="sugerencia.code"
+          (click)="seleccionarPuerto('origin', sugerencia)"
         >
           <div>
             {{ sugerencia.country_name}}
@@ -35,17 +32,17 @@
           </div>
         </li>
       </ul>
-      <div class="text-danger small" *ngIf="campoInvalido('puertoSalida')">Este campo es obligatorio</div>
+      <div class="text-danger small" *ngIf="campoInvalido('origin')">Este campo es obligatorio</div>
     </div>
 
     <div class="col-3 position-relative">
-      <label for="puertoLlegada" class="form-label">Puerto de llegada</label>
+      <label for="destination" class="form-label">Puerto de llegada</label>
       <input
-        id="puertoLlegada"
+        id="destination"
         type="text"
         class="form-control"
-        formControlName="puertoLlegada"
-        (input)="filtrarPuertos('puertoLlegada')"
+        [value]="inputDestination"
+        (input)="filtrarPuertos('destination',$event)"
         autocomplete="off"
         placeholder="Ej: Barcelona"
       />
@@ -54,7 +51,7 @@
         <li
           class="list-group-item list-group-item-action"
           *ngFor="let sugerencia of sugerenciasLlegada"
-          (click)="seleccionarPuerto('puertoLlegada', sugerencia)"
+          (click)="seleccionarPuerto('destination', sugerencia)"
         >
           <div>
             {{ sugerencia.country_name}}
@@ -64,31 +61,55 @@
           </div>
         </li>
       </ul>
-      <div class="text-danger small" *ngIf="campoInvalido('puertoLlegada')">Este campo es obligatorio</div>
+      <div class="text-danger small" *ngIf="campoInvalido('destination')">Este campo es obligatorio</div>
     </div>
 
     <div class="col-3">
-      <label for="fecha" class="form-label mb-0">Fecha</label>
-      <input type="date" id="fecha" class="form-control" formControlName="fecha">
-      <div class="text-darger small" *ngIf="campoInvalido('fecha')">
-        <ng-container *ngIf="formulario.get('fecha')?.errors?.['required']">
-          Debe seleccionar una fecha
+      <label for="etdDate" class="form-label ">Fecha</label>
+      <input type="date" id="etdDate" class="form-control" formControlName="etdDate">
+      <div class="text-darger small" *ngIf="campoInvalido('etdDate')">
+        <ng-container *ngIf="formulario.get('etdDate')?.errors?.['required']">
+          Debe seleccionar una Fecha
         </ng-container>
-        <ng-container *ngIf="formulario.get('fecha')?.errors?.['fechaPasada']">
-          La fecha no puede ser anterior a hoy.
+        <ng-container *ngIf="formulario.get('etdDate')?.errors?.['etdDatePasada']">
+          La Fecha no puede ser anterior a hoy.
         </ng-container>
       </div>
     </div>
 
-    <div class="col-3">
-      <label for="tipo" class="form-label mb-0">Tipo de contenedor</label>
-      <select id="tipo" class="form-select" formControlName="tipo">
+    <div formGroupName="containers" class="col-3">
+      <label for="type" class="form-label">type de contenedor</label>
+      <select id="type" class="form-select" formControlName="type">
         <option value="">Seleccione</option>
-        <option value="FTL">FTL</option>
-        <option value="FCL">FCL</option>
-        <option value="Aereo">Aéreo</option>
+        <optgroup label="Maritimo">
+          <option value="FTL">Carga Completa de Camión (FTL)</option>
+          <option value="FCL">Envio Contenedor Completo (FCL)</option>
+        </optgroup>
+        <optgroup label="Aereo">
+          <option value="20GP">Aéreo Carga Estandar</option>
+        </optgroup>
       </select>
-      <div class="text-danger small" *ngIf="campoInvalido('tipo')">Este campo es obligatorio</div>
+      <div class="text-danger small" *ngIf="campoInvalido('containers.type')">Este campo es obligatorio</div>
+    </div>
+
+    <div *ngIf="esAereoSeleccionado" class="col-12 collapse show" id="containers">
+      <div class="card card-body mb-3 mt-5">
+        <h3>Seleccione las cantidades que corresponden a su Embarque</h3>
+        <div class="row g-3" formGroupName="containers">
+          <div class="col-md-3">
+            <label>Cantidad</label>
+            <input type="number" class="form-control" formControlName="quantity">
+          </div>
+          <div class="col-md-3">
+            <label>Volumen</label>
+            <input type="number" class="form-control" formControlName="volume">
+          </div>
+          <div class="col-md-3">
+            <label>Peso</label>
+            <input type="number" class="form-control" formControlName="weight">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
