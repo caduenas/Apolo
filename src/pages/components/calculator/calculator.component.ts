@@ -49,7 +49,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   get esAereoSeleccionado(): boolean {
-    return this.formulario.get('containers.type')?.value === 'Aereo';
+    return this.formulario.get('containers.type')?.value === '20GP';
 
   }
 
