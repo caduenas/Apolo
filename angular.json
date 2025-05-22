@@ -68,7 +68,8 @@
               "buildTarget": "Apolo-Frontend:build:production"
             },
             "development": {
-              "buildTarget": "Apolo-Frontend:build:development"
+              "buildTarget": "Apolo-Frontend:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
