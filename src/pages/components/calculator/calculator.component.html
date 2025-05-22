@@ -1,9 +1,12 @@
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8 align-items-center">
-    <h1 class="text-center">Conozca la mejor tarifa para su mercancia</h1>
+<div class="container pb-4">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 align-items-center">
+      <h1 class="text-center">Conozca la mejor tarifa para su mercancia</h1>
+    </div>
   </div>
 </div>
+
 <form [formGroup]="formulario" (ngSubmit)="buscar()" class="container">
   <div class="row">
     <div class="col-3 position-relative">
@@ -17,19 +20,14 @@
         autocomplete="off"
         placeholder="Ej: Valparaíso"
       />
-
       <ul class="list-group position-absolute w-100 z-3 mt-1" *ngIf="sugerenciasSalida.length > 0">
         <li
           class="list-group-item list-group-item-action"
           *ngFor="let sugerencia of sugerenciasSalida" [value]="sugerencia.code"
           (click)="seleccionarPuerto('origin', sugerencia)"
         >
-          <div>
-            {{ sugerencia.country_name}}
-          </div>
-          <div>
-            <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>
-          </div>
+          <div>{{ sugerencia.country_name}}</div>
+          <div><span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong></div>
         </li>
       </ul>
       <div class="text-danger small" *ngIf="campoInvalido('origin')">Este campo es obligatorio</div>
@@ -46,19 +44,14 @@
         autocomplete="off"
         placeholder="Ej: Barcelona"
       />
-
       <ul class="list-group position-absolute w-100 z-3 mt-1" *ngIf="sugerenciasLlegada.length > 0">
         <li
           class="list-group-item list-group-item-action"
           *ngFor="let sugerencia of sugerenciasLlegada"
           (click)="seleccionarPuerto('destination', sugerencia)"
         >
-          <div>
-            {{ sugerencia.country_name}}
-          </div>
-          <div>
-            <span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong>
-          </div>
+          <div>{{ sugerencia.country_name}}</div>
+          <div><span class="text-muted">{{sugerencia.region}}</span>, <strong>{{ sugerencia.name }}</strong></div>
         </li>
       </ul>
       <div class="text-danger small" *ngIf="campoInvalido('destination')">Este campo es obligatorio</div>
@@ -67,7 +60,7 @@
     <div class="col-3">
       <label for="etdDate" class="form-label ">Fecha</label>
       <input type="date" id="etdDate" class="form-control" formControlName="etdDate">
-      <div class="text-darger small" *ngIf="campoInvalido('etdDate')">
+      <div class="text-danger small" *ngIf="campoInvalido('etdDate')">
         <ng-container *ngIf="formulario.get('etdDate')?.errors?.['required']">
           Debe seleccionar una Fecha
         </ng-container>
@@ -77,36 +70,42 @@
       </div>
     </div>
 
-    <div formGroupName="containers" class="col-3">
-      <label for="type" class="form-label">type de contenedor</label>
-      <select id="type" class="form-select" formControlName="type">
-        <option value="">Seleccione</option>
-        <optgroup label="Maritimo">
-          <option value="FTL">Carga Completa de Camión (FTL)</option>
-          <option value="FCL">Envio Contenedor Completo (FCL)</option>
-        </optgroup>
-        <optgroup label="Aereo">
-          <option value="20GP">Aéreo Carga Estandar</option>
-        </optgroup>
-      </select>
-      <div class="text-danger small" *ngIf="campoInvalido('containers.type')">Este campo es obligatorio</div>
-    </div>
+    <div formArrayName="containers" class="col-3">
+      <div [formGroupName]="0">
+        <div class="row">
+          <div class="col-12"> <label for="type" class="form-label">Tipo de contenedor</label>
+            <select id="type" class="form-select" formControlName="type">
+              <option value="">Seleccione</option>
+              <optgroup label="Maritimo">
+                <option value="FTL">Carga Completa de Camión (FTL)</option>
+                <option value="FCL">Envio Contenedor Completo (FCL)</option>
+              </optgroup>
+              <optgroup label="Aereo">
+                <option value="20GP">Aéreo Carga Estándar</option>
+              </optgroup>
+            </select>
+            <div class="text-danger small" *ngIf="campoInvalido('containers.0.type')">Este campo es obligatorio</div>
+          </div>
+        </div>
 
-    <div *ngIf="esAereoSeleccionado" class="col-12 collapse show" id="containers">
-      <div class="card card-body mb-3 mt-5">
-        <h3>Seleccione las cantidades que corresponden a su Embarque</h3>
-        <div class="row g-3" formGroupName="containers">
-          <div class="col-md-3">
-            <label>Cantidad</label>
-            <input type="number" class="form-control" formControlName="quantity">
-          </div>
-          <div class="col-md-3">
-            <label>Volumen</label>
-            <input type="number" class="form-control" formControlName="volume">
-          </div>
-          <div class="col-md-3">
-            <label>Peso</label>
-            <input type="number" class="form-control" formControlName="weight">
+        <div class="row mt-4" *ngIf="esAereoSeleccionado">
+          <div class="col-12"> <div class="card card-body mb-3">
+              <h3>Seleccione las cantidades que corresponden a su Embarque</h3>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label>Cantidad</label>
+                  <input type="number" class="form-control" formControlName="quantity">
+                </div>
+                <div class="col-md-4">
+                  <label>Volumen</label>
+                  <input type="number" class="form-control" formControlName="volume">
+                </div>
+                <div class="col-md-4">
+                  <label>Peso</label>
+                  <input type="number" class="form-control" formControlName="weight">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -118,6 +117,5 @@
       <button type="submit" class="btn btn-primary text-white w-100" (click)="mostrar = true">Buscar</button>
     </div>
   </div>
-
-  <app-prebook-list *ngIf="mostrar"></app-prebook-list>
 </form>
+<app-prebook-list *ngIf="mostrarResultados()" [rutasDataSignal]="rutasDeLaApi()"></app-prebook-list>

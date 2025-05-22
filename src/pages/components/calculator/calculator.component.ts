@@ -1,10 +1,11 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule,FormControl } from '@angular/forms';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule,FormControl, FormArray } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { PuertoService } from '../../../app/services/puerto.service';
 import { PrebookListComponent } from "../prebook-list/prebook-list.component";
 import { tariffs } from '../../../app/services/tariffs.service'
+import { Puerto } from '../../../app/models/puerto.model';
 
 @Component({
   selector: 'app-calculator',
@@ -14,12 +15,15 @@ import { tariffs } from '../../../app/services/tariffs.service'
   styleUrl: './calculator.component.scss'
 })
 export class CalculatorComponent implements OnInit {
-  private api = inject(tariffs);
   formulario!: FormGroup;
+  rutasDeLaApi = signal<any[] | null>(null);
+  mostrarResultados = signal(false);
+  private api = inject(tariffs);
+
   inputOrigin: string = '';
   inputDestination: string = '';
   typeSeleccionado: string = "";
-  puertos: { code: string; name: string; country_code: string; country_name: string; region: string }[] = [];
+  puertos: Puerto[] = [];
   mostrar = false
   
   constructor(private fb: FormBuilder, private puertoService: PuertoService) {}
@@ -29,12 +33,14 @@ export class CalculatorComponent implements OnInit {
       origin: ['', Validators.required],
       destination: ['', Validators.required],
       etdDate: ['', [Validators.required, this.etdDateNoPasadaValidator()]],
-      containers : this.fb.group({
-        type: ['', Validators.required],
-        quantity: [0],
-        volume: [0],
-        weight: [0]
-      })
+      containers : this.fb.array([
+        this.fb.group({
+          type: ['', Validators.required],
+          quantity: [0],
+          volume: [0],
+          weight: [0]
+        })
+      ])
     });
     
     this.puertoService.getPuertos().subscribe({
@@ -49,17 +55,24 @@ export class CalculatorComponent implements OnInit {
   }
 
   get esAereoSeleccionado(): boolean {
-    return this.formulario.get('containers.type')?.value === '20GP';
-
+    return (this.formulario.get('containers') as FormArray).at(0)?.get('type')?.value === '20GP';
   }
 
   buscar(): void {
+    this.mostrarResultados.set(true);
+    this.rutasDeLaApi.set(null);
+
     const datos = this.formulario.value;
-      this.api.postData(datos).subscribe({
-        next: () => console.log("Datos enviados"),
-        error: err => console.error("Error al enviar datos",err)
-      });
-      console.log('Datos del formulario:', datos);
+    this.api.postData(datos).subscribe({
+      next: (response: any[]) => {
+        this.rutasDeLaApi.set(response);
+        console.log("Datos enviados con exito y respuesta recibida", response);
+      },
+      error: err => {
+        console.error("Error al enviar datos o recibir respuesta", err);
+        this.rutasDeLaApi.set([]);
+      }
+    });
   }
 
   campoInvalido(campo : string): boolean {
@@ -119,4 +132,5 @@ export class CalculatorComponent implements OnInit {
       return null; 
     };
   }
+  
 }
