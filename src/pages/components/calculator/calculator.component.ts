@@ -36,7 +36,7 @@ export class CalculatorComponent implements OnInit {
       containers : this.fb.array([
         this.fb.group({
           type: ['', Validators.required],
-          quantity: [0],
+          quantity: [1],
           volume: [0],
           weight: [0]
         })
@@ -80,8 +80,8 @@ export class CalculatorComponent implements OnInit {
     return !!control && control.invalid && control.touched;
   }
 
-  sugerenciasSalida: { code: string; name: string; country_name: string; region: string }[] = [];
-  sugerenciasLlegada: { code: string; name: string; country_name: string; region: string }[] = [];
+  sugerenciasSalida: Puerto[] = [];
+  sugerenciasLlegada: Puerto[] = [];
 
 
   filtrarPuertos(campo: 'origin' | 'destination', event: Event): void {
