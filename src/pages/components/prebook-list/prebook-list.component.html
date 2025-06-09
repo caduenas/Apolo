@@ -1,8 +1,8 @@
 <div class="container ">
-  <h2 class="text-center mb-4">Rutas Disponibles</h2>
+  <h1 class="text-center mb-4">Rutas Disponibles</h1>
 
-  <div *ngIf="cargando" class="text-center">Cargando datos...</div>
-  <div *ngIf="!cargando && rutasFiltradas().length === 0" class="alert alert-warning text-center">No hay rutas disponibles en este momento.</div>
+  <div *ngIf="this.cargando()" class="text-center">Cargando datos...</div>
+  <div *ngIf="!this.cargando() && rutasFiltradas().length === 0" class="alert alert-warning text-center">No hay rutas disponibles en este momento.</div>
 
 <div class="card mb-4" [formGroup]="filtrosForm">
   <div class="card-body">
@@ -51,19 +51,16 @@
     <div class="col-md-6 mb-3" *ngFor="let ruta of rutasFiltradas()">
       <div class="card h-100 shadow-sm">
         <div class="card-body">
-          <h4 class="card-title">{{ ruta.origin }} → {{ ruta.destination }}</h4>
+          <h3 class="card-title">{{ ruta.origin }} → {{ ruta.destination }}</h3>
           <div class="card-text">
-            <p class="mb-0">Precios:</p>
-            <div *ngFor="let linea of ruta.lines">
-              <p class="mb-0 ms-3">- {{ linea?.currency }}{{ linea?.value }} ({{ linea?.chargeCode }})</p>
-            </div>
+            <h4 class="mb-0">Precios: <strong>{{ ruta.lines[0].currency }}{{ getPrecioDeRuta(ruta) }}</strong></h4>
           </div>
           <div class="card-text row mt-2">
             <div class="col-6">
-              <p class="mb-0">Tipo de contenedor: <strong>{{ ruta.category }}</strong></p>
+              <h4 class="mb-0">Tipo de contenedor: <strong>{{ ruta.category }}</strong></h4>
             </div>
             <div class="col-6 text-end">
-              <p class="mb-1">Duración: {{ ruta.freeDays }} días</p>
+              <h4 class="mb-1">Dias Libres: {{ ruta.freeDays }} días</h4>
             </div>
           </div>
           <div class="text-end">
