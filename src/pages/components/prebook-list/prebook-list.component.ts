@@ -146,6 +146,5 @@ export class PrebookListComponent implements OnInit {
   prebook(ruta: Ruta) {
     this.routeStore.setSelectedRoute(ruta);
     this.router.navigate(['/detalle']);
-    console.log("Prebook", ruta);
   }
 }

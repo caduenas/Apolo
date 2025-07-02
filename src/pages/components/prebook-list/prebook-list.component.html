@@ -1,70 +1,73 @@
-<div class="container ">
+<div class="container">
   <h1 class="text-center mb-4">Rutas Disponibles</h1>
 
   <div *ngIf="this.cargando()" class="text-center">Cargando datos...</div>
   <div *ngIf="!this.cargando() && rutasFiltradas().length === 0" class="alert alert-warning text-center">No hay rutas disponibles en este momento.</div>
 
-<div class="card mb-4" [formGroup]="filtrosForm">
-  <div class="card-body">
-    <h5 class="card-title">Filtros</h5>
-    <div class="row g-3">
-      <div class="col-md-2">
-        <label class="form-label">Precio mínimo</label>
-        <input type="number" class="form-control" formControlName="precioMin">
-      </div>
-      <div class="col-md-2">
-        <label class="form-label">Precio máximo</label>
-        <input type="number" class="form-control" formControlName="precioMax">
-      </div>
-      <div class="col-md-2">
-        <label class="form-label">Tipo contenedor</label>
-        <select class="form-select" formControlName="tipoContenedor">
-          <option value="">Todos</option>
-          <option *ngFor="let tipo of tiposContenedor" [value]="tipo">{{ tipo }}</option>
-        </select>
-      </div>
-    </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="card mb-4 container d-flex justify-content-start" [formGroup]="filtrosForm">
+        <div class="card-body">
+          <h5 class="card-title">Filtros</h5>
+          <div class="g-3">
+            <div>
+              <label class="form-label">Precio mínimo</label>
+              <input type="number" class="form-control" formControlName="precioMin">
+            </div>
+            <div>
+              <label class="mt-3 form-label">Precio máximo</label>
+              <input type="number" class="form-control" formControlName="precioMax">
+            </div>
+            <div>
+              <label class="mt-3 form-label">Tipo contenedor</label>
+              <select class="form-select" formControlName="tipoContenedor">
+                <option value="">Todos</option>
+                <option *ngFor="let tipo of tiposContenedor" [value]="tipo">{{ tipo }}</option>
+              </select>
+            </div>
+          </div>
 
-    <div class="mt-3 text-end">
-      <button class="btn btn-secondary me-2" (click)="limpiarFiltros()">Limpiar</button>
-      <button class="btn btn-primary me-2 text-white" (click)="filtrarRutas()">Aplicar filtros</button>
-      <button class="btn btn-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#filtrosAvanzados" aria-expanded="false" aria-controls="filtrosAvanzados">
-        Filtros Avanzados
-      </button>
-    </div>
-  </div>
+          <div class="mt-3 text-end">
+            <button class="btn btn-secondary me-2" (click)="limpiarFiltros()">Limpiar</button>
+            <button class="mt-1 btn btn-primary me-2 text-white" (click)="filtrarRutas()">Aplicar filtros</button>
+            <button class="mt-1 btn btn-primary me-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#filtrosAvanzados" aria-expanded="false" aria-controls="filtrosAvanzados">
+              Filtros Avanzados
+            </button>
+          </div>
+        </div>
 
-  <div class="collapse" id="filtrosAvanzados">
-    <div class="card card-body mb-3">
-      <div class="row g-3">
-        <div class="col-md-6">
-          <label>Puerto de Salida</label>
-          <input type="text" class="form-control" formControlName="origin">
+        <div class="collapse" id="filtrosAvanzados">
+          <div class="card card-body mb-3">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Puerto de Salida</label>
+                <input type="text" class="form-control" formControlName="origin">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-  <div class="row" *ngIf="rutasFiltradas().length > 0">
-    <div class="col-md-6 mb-3" *ngFor="let ruta of rutasFiltradas()">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h3 class="card-title">{{ ruta.origin }} → {{ ruta.destination }}</h3>
-          <div class="card-text">
-            <h4 class="mb-0">Precios: <strong>{{ ruta.lines[0].currency }}{{ getPrecioDeRuta(ruta) }}</strong></h4>
-          </div>
-          <div class="card-text row mt-2">
-            <div class="col-6">
-              <h4 class="mb-0">Tipo de contenedor: <strong>{{ ruta.category }}</strong></h4>
+    <div class="col-9" *ngIf="rutasFiltradas().length > 0">
+      <div class="mb-3" *ngFor="let ruta of rutasFiltradas()">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">{{ ruta.origin }} → {{ ruta.destination }}</h3>
+            <div class="card-text">
+              <h4 class="mb-0">Precios: <strong>{{ ruta.lines[0].currency }}{{ getPrecioDeRuta(ruta) }}</strong></h4>
             </div>
-            <div class="col-6 text-end">
-              <h4 class="mb-1">Dias Libres: {{ ruta.freeDays }} días</h4>
+            <div class="card-text row mt-2">
+              <div class="col-6">
+                <h4 class="mb-0">Tipo de contenedor: <strong>{{ ruta.category }}</strong></h4>
+              </div>
+              <div class="col-6 text-end">
+                <h4 class="mb-1">Días Libres: {{ ruta.freeDays }} días</h4>
+              </div>
             </div>
-          </div>
-          <div class="text-end">
-            <button class="btn btn-primary text-white w-50" (click)="prebook(ruta)">Prebook</button>
+            <div class="text-end">
+              <button class="btn btn-primary text-white w-50" (click)="prebook(ruta)">Prebook</button>
+            </div>
           </div>
         </div>
       </div>

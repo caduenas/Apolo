@@ -66,7 +66,6 @@ export class CalculatorComponent implements OnInit {
     this.api.postData(datos).subscribe({
       next: (response: any[]) => {
         this.rutasDeLaApi.set(response);
-        console.log("Datos enviados con exito y respuesta recibida", response);
       },
       error: err => {
         console.error("Error al enviar datos o recibir respuesta", err);
